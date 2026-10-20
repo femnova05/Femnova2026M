@@ -1,0 +1,17 @@
+FEMNOVA — Nivel 4: Prevención de la Discriminación
+
+Estructura:
+- index.html: contenido de la página.
+- css/style.css: estilos separados.
+- js/main.js: JavaScript separado.
+- img/: carpeta para imágenes o recursos externos locales.
+
+Cómo abrir:
+1. Descomprime la carpeta del proyecto.
+2. Abre la carpeta Femnova_Nivel_4 en Visual Studio Code.
+3. Abre index.html en el navegador (o usa Live Server).
+
+Notas:
+- La referencia img/logo.png se conservó, pero ese archivo no venía por separado en el HTML original. Si tienes el logo, colócalo en la carpeta img con el nombre logo.png.
+- Las fuentes de Google Fonts requieren conexión a internet.
+- Se mantuvo la imagen del personaje si estaba incrustada en el HTML original.

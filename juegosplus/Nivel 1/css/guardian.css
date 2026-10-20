@@ -1,0 +1,34 @@
+/* ===== Guía: personaje que reacciona al nivel ===== */
+  .guardian{position:fixed; right:18px; bottom:12px; width:104px; z-index:999;}
+  .g-btn{display:block; width:100%; padding:0; border:0; background:none; cursor:pointer; -webkit-tap-highlight-color:transparent;}
+  .g-btn:focus-visible{outline:2px solid var(--dorado-claro); outline-offset:4px; border-radius:14px;}
+  .g-body,.g-lean{display:block;}
+  .g-body{animation:g-float 3.6s ease-in-out infinite;}
+  .g-lean{transform-origin:50% 90%; transition:transform .6s cubic-bezier(.34,1.56,.64,1);}
+  .guardian[data-lean="l"] .g-lean{transform:rotate(-9deg) translateX(-6px);}
+  .guardian[data-lean="r"] .g-lean{transform:rotate(9deg) translateX(6px);}
+  .g-img{display:block; width:100%; height:auto; transform-origin:50% 100%;
+    filter:drop-shadow(0 0 8px rgba(201,164,76,.30)) drop-shadow(0 6px 10px rgba(0,0,0,.55));}
+  .g-img.happy{animation:g-happy .7s cubic-bezier(.3,1.4,.5,1);}
+  .g-img.sad{animation:g-sad .6s ease;}
+  .g-img.cheer{animation:g-cheer 1.1s ease 2;}
+  @keyframes g-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  @keyframes g-happy{0%{transform:none}25%{transform:scale(1.12,.86)}55%{transform:translateY(-22px) scale(.94,1.1)}100%{transform:none}}
+  @keyframes g-sad{0%,100%{transform:none}20%{transform:translateX(-6px) rotate(-4deg)}40%{transform:translateX(6px) rotate(4deg)}60%{transform:translateX(-4px) rotate(-2deg)}80%{transform:translateX(3px)}}
+  @keyframes g-cheer{0%,100%{transform:none}30%{transform:translateY(-26px) rotate(-6deg)}60%{transform:translateY(-14px) rotate(6deg)}}
+
+  .g-bubble{
+    position:absolute; right:6px; bottom:calc(100% + 8px); width:max-content; max-width:min(220px,68vw);
+    padding:10px 14px; font:italic 500 15.5px/1.35 'Cormorant Garamond',serif; color:var(--crema);
+    background:linear-gradient(180deg,rgba(42,24,48,.97),rgba(21,18,24,.97));
+    border:1px solid rgba(201,164,76,.5); box-shadow:0 10px 30px -10px rgba(0,0,0,.85);
+    opacity:0; transform:translateY(6px) scale(.96); transition:opacity .25s, transform .25s; pointer-events:none;
+  }
+  .g-bubble::after{
+    content:""; position:absolute; right:30px; bottom:-6px; width:10px; height:10px; background:#151218;
+    border-right:1px solid rgba(201,164,76,.5); border-bottom:1px solid rgba(201,164,76,.5); transform:rotate(45deg);
+  }
+  .g-bubble.show{opacity:1; transform:none;}
+  @media (max-width:480px){.guardian{width:78px; right:10px; bottom:10px;}}
+  @media (prefers-reduced-motion:reduce){.g-body,.g-img{animation:none!important;} .g-lean{transition:none;}}
+  @media print{.guardian{display:none;}}

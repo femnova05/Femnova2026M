@@ -1,0 +1,18 @@
+FEMNOVA — Nivel 5: Voto femenino
+
+Archivos:
+- index.html: estructura de la página.
+- css/style.css: estilos extraídos del HTML original.
+- js/main.js: JavaScript extraído del HTML original.
+- img/: carpeta reservada para imágenes y recursos locales.
+
+Cómo abrir:
+1. Extrae la carpeta del ZIP.
+2. Abre la carpeta Femnova_Nivel_5 en Visual Studio Code.
+3. Abre index.html en el navegador (o usa la extensión Live Server).
+
+Notas:
+- El HTML original hace referencia a img/logo.png, pero ese archivo no venía incluido.
+- Las fuentes de Google Fonts necesitan conexión a internet.
+- Se conservó el contenido y comportamiento original, separando CSS y JavaScript en archivos externos.
+- El archivo original contiene algunas etiquetas internas que dicen “Nivel 4”; no se modificaron para respetar el contenido.

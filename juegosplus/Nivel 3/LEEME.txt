@@ -1,0 +1,16 @@
+FEMNOVA — Nivel 3: Respeto y Comunicación
+
+Estructura:
+- index.html: estructura y contenido de la página.
+- css/style.css: estilos visuales.
+- js/main.js: interacciones y actividades.
+- img/: carpeta para imágenes externas.
+
+Para abrir:
+1. Descomprime la carpeta.
+2. Abre Femnova_Nivel_3 en Visual Studio Code.
+3. Abre index.html en el navegador (o usa Live Server).
+
+Nota:
+El HTML original referencia img/logo.png como favicon e icono de Apple, pero ese archivo no venía incluido. Si tienes el logo, guárdalo en la carpeta img con el nombre logo.png.
+Las fuentes se cargan desde Google Fonts, por lo que se necesita conexión a internet para verlas.

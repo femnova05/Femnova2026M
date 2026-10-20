@@ -1,0 +1,16 @@
+FEMNOVA — Nivel 2: Igualdad y Equidad
+
+Estructura:
+- index.html: estructura y contenido de la página.
+- css/style.css: estilos visuales.
+- js/main.js: interacciones y actividades JavaScript.
+- img/: carpeta para imágenes externas, como logo.png.
+
+Para abrir:
+1. Mantén la estructura de carpetas.
+2. Abre index.html en tu navegador o en Visual Studio Code.
+3. Si necesitas que aparezca el favicon/logo, coloca el archivo logo.png dentro de img/.
+   El HTML original hace referencia a img/logo.png, pero ese archivo no venía incluido
+   en el archivo que se compartió.
+
+Los dibujos SVG y la imagen de la mascota que estaban incrustados en el HTML se mantienen.
